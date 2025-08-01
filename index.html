@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Tourist Planner System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 30px auto;
+            padding: 10px;
+        }
+        input, button {
+            padding: 8px;
+            font-size: 1em;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin: 5px 0;
+        }
+        .remove-btn {
+            margin-left: 15px;
+            color: red;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tourist Planner System</h1>
+
+    <form id="destinationForm">
+        <input type="text" id="destinationInput" placeholder="Enter tourist destination" required />
+        <button type="submit">Add Destination</button>
+    </form>
+
+    <h3>Planned Destinations:</h3>
+    <ul id="destinationList"></ul>
+
+    <!-- Link to external JavaScript file -->
+    <script src="touristPlanner.js"></script>
+</body>
+</html>
